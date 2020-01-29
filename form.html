@@ -13,9 +13,13 @@
     <header>
         <h1>Fill out the form so we can choose the right gift for you</h1>
     </header>
-    <form>
-            <label>Name:
-                <input type="text" placeholder="Name">
+    <form action="https://formspree.io/xnqdanpr" method="POST">
+        <fieldset>
+         <legend>Personal information</legend>
+            <label>First name:
+                <input type="text" placeholder="First name">
+            <label>Last name:
+                <input type="text" placeholder="Last name">
             </label>
             <label for="email">Email:</label>
             <input type="email" placeholder="Email" id="email">
@@ -29,6 +33,43 @@
             <label>
                 <input type="radio" name="gender" value="other">Other
             </label>
-        </form>
+        </fieldset>
+        <h2>Choose you favorite brand</h2>
+        <p>The select element defines a drop-down list:</p>
+        <label>
+            <select name="brands">
+             <option value="Apple">Apple</option>
+             <option value="Samsung">Samsung</option>
+             <option value="Sony">Sony</option>
+             <option value="Xiaomi">Xiaomi</option>
+            </select>
+        </label>
+        <h2>Choose preferred model</h2>
+
+<label>
+	<input type="radio" name="model" value="redmi 7" checked> Redmi 7<br>
+    <input type="radio" name="model" value="redmi note 7" checked> Redmi note 7<br>
+    <input type="radio" name="model" value="redmi note 7 pro" checked> Redmi note 7 pro<br>
+</label>
+        <h2>How many memory you need?</h2>
+	<label>
+    <input type="radio" name="memory" value="32" checked> 32<br>
+    <input type="radio" name="memory" value="64" checked> 64<br>
+    <input type="radio" name="memory" value="128" checked> 128<br>
+    </label>
+        <h2>Color</h2>
+	<label>
+    <input type="radio" name="color" value="black" checked> black<br>
+    <input type="radio" name="color" value="white" checked> white<br>
+    <input type="radio" name="color" value="blue" checked> blue<br>
+    </label>
+        <h2>Your wishes</h2>
+    <p>Here you can write wishes:
+    <label>
+     <textarea name="message" rows="20" cols="40">what you want see in mobile gadgets?
+     </textarea>
+    </label>
+        <input type="submit" value="Send to us">
+    </form>
 </body>
 </html>
